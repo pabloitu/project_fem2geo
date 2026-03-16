@@ -1,0 +1,27 @@
+crs:
+  src: epsg:32719
+  dst: epsg:32719
+
+xy_units:
+  src: m
+  dst: km
+
+depth:
+  dst_positive: up
+
+anchor:
+  src_geo: [-71.07, -20.09, 15.6]   # lon, lat, depth_km (positive down)
+  dst: [0, 0, -21]                     # x, y, z in output units, z_positive=up
+
+rotation:
+  azimuth_deg: -10
+
+input:
+  file: ../data/slab_top_surface.vtp
+  mesh_units: m
+  lon_range: [-75.5, -60.0]
+  lat_range: [-22.0, -18.0]
+  depth_range_km: [0, 60]
+
+output:
+  file: ./slab_top_surface_fem.vtp
