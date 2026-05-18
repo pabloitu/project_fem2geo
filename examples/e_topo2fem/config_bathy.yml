@@ -10,7 +10,7 @@ depth:
   dst_positive: up
 
 anchor:
-  src_geo: [-71.07, -20.09, 15.6]   # lon, lat, depth_km (positive down)
+  src_geo: [-71.07, -20.09, 4.6]   # lon, lat, depth_km (positive down)
   dst: [0, 0, -8]                     # x, y, z in output units, z_positive=up
 
 rotation:
